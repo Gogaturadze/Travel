@@ -1,0 +1,292 @@
+@import "./reset";
+@import "./colors";
+
+.conteiner {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  background-color: $backgroudcolor;
+}
+
+// maibg with text
+.bgheader {
+  background-image: url(../img/bgheader.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  height: 85vh;
+  min-height: 700px;
+  z-index: 10;
+  .maintext {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    h3 {
+      font-size: 26px;
+    }
+    h1 {
+      font-size: 70px;
+      letter-spacing: 10px;
+    }
+  }
+}
+// navbar
+.navbar {
+  .hoverlogo {
+    position: relative;
+    transition: 0.6s;
+  }
+  .hoverlogo:hover {
+    transform: translate(0, -15px);
+  }
+  .navmargin {
+    margin-top: 60px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .searchuser {
+    .burger {
+      color: #ffffff;
+      margin-right: 17px;
+    }
+    margin-top: 60px;
+    .marginlogo {
+      margin-right: 17px;
+    }
+  }
+  .menubar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 60px;
+    position: relative;
+    a {
+      font-size: 24px;
+      color: white;
+      position: relative;
+    }
+    li:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+  a:after {
+    content: "";
+    position: absolute;
+    background-color: $navhovercolor;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  a:hover:after {
+    width: 100%;
+  }
+  a:hover {
+    color: $navhovercolor;
+  }
+}
+
+// discovery cards
+.textcard {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  p3 {
+    font-size: 27px;
+    color: #545466;
+  }
+  a {
+    color: $cardtext2;
+    font-size: 18px;
+  }
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .card {
+    position: relative;
+    transition: 0.3s;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .card:not(:last-child) {
+    margin-right: 10px;
+  }
+  .heart {
+    position: absolute;
+    right: 0;
+    margin: 4px 4px 0 0;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 8px 20px #958181;
+  }
+}
+
+.section1 {
+  position: relative;
+  .overlap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 120px;
+    width: 780px;
+    margin-top: -80px;
+    z-index: 10000;
+  }
+  .buttons {
+    background-color: $buttonscolor;
+    border: none;
+    color: white;
+    width: 108px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .active,
+  .buttons:hover {
+    background-color: #ffffff;
+    border: none;
+    color: #406f56;
+    width: 108px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .mimartuleba {
+    background-color: #ffffff;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .button2 {
+      background-color: $button2color;
+      border: none;
+      color: white;
+      width: 108px;
+      height: 40px;
+      cursor: pointer;
+    }
+    .button2:hover {
+      background-color: $buttonscolor;
+    }
+    .roundtrip {
+      a {
+        color: $cardtext;
+      }
+      a::after {
+        margin-left: 7px;
+        content: url("../img/isarikvemot.png");
+      }
+      p {
+        font-weight: bolder;
+        font-size: 19px;
+      }
+    }
+  }
+  .roundtrip:first-child::before {
+    content: url("../img/isarikvemot.png");
+  }
+  .roundtrip:nth-child(2)::before {
+    content: url("../img/guests.png");
+  }
+  .roundtrip:nth-child(3)::before {
+    content: url("../img/chamofrena.png");
+  }
+  .roundtrip:nth-child(4)::before {
+    content: url("../img/gafrena.png");
+  }
+}
+
+// section2
+
+.howard {
+  margin-top: 20px;
+  .charcho {
+    position: absolute;
+    max-width: 55%;
+  }
+  .freebie {
+    position: relative;
+    padding: 20px;
+    max-width: 60%;
+  }
+  .pinsky {
+    width: 60%;
+    > h3 {
+      font-size: 56px;
+      padding: 20px 0 0 20px;
+      letter-spacing: 8px;
+    }
+  }
+  .htext {
+    margin-top: 100px;
+    a {
+      font-size: 27px;
+      color: #0980fd;
+    }
+    h3 {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 26px;
+      margin-top: 20px;
+      letter-spacing: 3px;
+      width: 70%;
+    }
+  }
+  .horvardai {
+    display: flex;
+    position: absolute;
+    margin-top: 44px;
+    left: 62%;
+
+    .myphoto {
+      position: absolute;
+      padding: 12px;
+    }
+  }
+}
+
+.infobg {
+  display: flex;
+  position: relative;
+  img {
+    width: 100%;
+    position: relative;
+  }
+  .infotext {
+    position: absolute;
+    width: 17%;
+    right: 3%;
+    bottom: 28%;
+  }
+  .contact {
+    background-color: white;
+    position: absolute;
+    right: 3.6%;
+    bottom: 4%;
+    img {
+      margin: 10px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+// media
+@import "./media";

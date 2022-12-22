@@ -1,0 +1,552 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.conteiner {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #e5e9ec;
+}
+
+.bgheader {
+  background-image: url(../img/bgheader.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  height: 85vh;
+  min-height: 700px;
+  z-index: 10;
+}
+.bgheader .maintext {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+.bgheader .maintext h3 {
+  font-size: 26px;
+}
+.bgheader .maintext h1 {
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .hoverlogo {
+  position: relative;
+  transition: 0.6s;
+}
+.navbar .hoverlogo:hover {
+  transform: translate(0, -15px);
+}
+.navbar .navmargin {
+  margin-top: 60px;
+}
+.navbar .searchuser {
+  margin-top: 60px;
+}
+.navbar .searchuser .burger {
+  color: #ffffff;
+  margin-right: 17px;
+}
+.navbar .searchuser .marginlogo {
+  margin-right: 17px;
+}
+.navbar .menubar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 60px;
+  position: relative;
+}
+.navbar .menubar a {
+  font-size: 24px;
+  color: white;
+  position: relative;
+}
+.navbar .menubar li:not(:last-child) {
+  margin-right: 45px;
+}
+.navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: #00ff22;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar a:hover:after {
+  width: 100%;
+}
+.navbar a:hover {
+  color: #00ff22;
+}
+
+.textcard {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.textcard p3 {
+  font-size: 27px;
+  color: #545466;
+}
+.textcard a {
+  color: #5c28ea;
+  font-size: 18px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.cards .card {
+  position: relative;
+  transition: 0.3s;
+}
+.cards .card img {
+  width: 100%;
+  height: auto;
+}
+.cards .card:not(:last-child) {
+  margin-right: 10px;
+}
+.cards .heart {
+  position: absolute;
+  right: 0;
+  margin: 4px 4px 0 0;
+}
+.cards .card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 8px 20px #958181;
+}
+
+.section1 {
+  position: relative;
+}
+.section1 .overlap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120px;
+  width: 780px;
+  margin-top: -80px;
+  z-index: 10000;
+}
+.section1 .buttons {
+  background-color: #406f56;
+  border: none;
+  color: white;
+  width: 108px;
+  height: 40px;
+  cursor: pointer;
+}
+.section1 .active,
+.section1 .buttons:hover {
+  background-color: #ffffff;
+  border: none;
+  color: #406f56;
+  width: 108px;
+  height: 40px;
+  cursor: pointer;
+}
+.section1 .mimartuleba {
+  background-color: #ffffff;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section1 .mimartuleba .button2 {
+  background-color: #5c28ea;
+  border: none;
+  color: white;
+  width: 108px;
+  height: 40px;
+  cursor: pointer;
+}
+.section1 .mimartuleba .button2:hover {
+  background-color: #406f56;
+}
+.section1 .mimartuleba .roundtrip a {
+  color: #979dad;
+}
+.section1 .mimartuleba .roundtrip a::after {
+  margin-left: 7px;
+  content: url("../img/isarikvemot.png");
+}
+.section1 .mimartuleba .roundtrip p {
+  font-weight: bolder;
+  font-size: 19px;
+}
+.section1 .roundtrip:first-child::before {
+  content: url("../img/isarikvemot.png");
+}
+.section1 .roundtrip:nth-child(2)::before {
+  content: url("../img/guests.png");
+}
+.section1 .roundtrip:nth-child(3)::before {
+  content: url("../img/chamofrena.png");
+}
+.section1 .roundtrip:nth-child(4)::before {
+  content: url("../img/gafrena.png");
+}
+
+.howard {
+  margin-top: 20px;
+}
+.howard .charcho {
+  position: absolute;
+  max-width: 55%;
+}
+.howard .freebie {
+  position: relative;
+  padding: 20px;
+  max-width: 60%;
+}
+.howard .pinsky {
+  width: 60%;
+}
+.howard .pinsky > h3 {
+  font-size: 56px;
+  padding: 20px 0 0 20px;
+  letter-spacing: 8px;
+}
+.howard .htext {
+  margin-top: 100px;
+}
+.howard .htext a {
+  font-size: 27px;
+  color: #0980fd;
+}
+.howard .htext h3 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.howard .htext p {
+  font-size: 26px;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  width: 70%;
+}
+.howard .horvardai {
+  display: flex;
+  position: absolute;
+  margin-top: 44px;
+  left: 62%;
+}
+.howard .horvardai .myphoto {
+  position: absolute;
+  padding: 12px;
+}
+
+.infobg {
+  display: flex;
+  position: relative;
+}
+.infobg img {
+  width: 100%;
+  position: relative;
+}
+.infobg .infotext {
+  position: absolute;
+  width: 17%;
+  right: 3%;
+  bottom: 28%;
+}
+.infobg .contact {
+  background-color: white;
+  position: absolute;
+  right: 3.6%;
+  bottom: 4%;
+}
+.infobg .contact img {
+  margin: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 951px) {
+  .burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .conteiner {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  h3 {
+    font-size: 40px !important;
+    padding: 2px 0 0 20px !important;
+    letter-spacing: 4px !important;
+  }
+}
+@media (max-width: 950px) {
+  .d-none {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .overlap {
+    max-width: 90%;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .cards .card:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  h3 {
+    font-size: 30px !important;
+    padding: 0 0 0 20px !important;
+    letter-spacing: 4px !important;
+  }
+}
+@media screen and (max-width: 680px) {
+  .mimartuleba {
+    flex-wrap: wrap;
+    height: 100% !important;
+  }
+}
+@media screen and (max-width: 680px) {
+  .roundtrip {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 606px) {
+  .freebie {
+    padding: 15px 20px 10px 10px !important;
+  }
+  h3 {
+    font-size: 22px !important;
+    padding: 0 0 0 20px !important;
+    letter-spacing: 2px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .conteiner {
+    width: 95%;
+  }
+  .mimartuleba {
+    height: 130% !important;
+  }
+  .maintext > h1 {
+    font-size: 45px !important;
+  }
+  .roundtrip {
+    margin: -5px 38px 20px 40px;
+  }
+  .marginmedia {
+    margin-right: 17px;
+  }
+  .textcard {
+    margin-top: 150px;
+  }
+  .mtopmedia {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .horvardai {
+    margin-top: 15px !important;
+  }
+}
+@media screen and (max-width: 470px) {
+  .textcard > p3 {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .freebie {
+    padding: 15px 20px 10px 10px !important;
+  }
+  h3 {
+    font-size: 17px !important;
+    padding: 0 0 0 11px !important;
+    letter-spacing: 2px !important;
+  }
+}
+@media screen and (max-width: 412px) {
+  .textcard {
+    margin-top: 250px;
+  }
+  .roundtrip {
+    margin: 10px 54px 0px 55px;
+  }
+  .mimartuleba {
+    height: 200% !important;
+  }
+  .mbotomedia {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .maintext > h1 {
+    font-size: 20px !important;
+  }
+  .maintext > h3 {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .horvardai {
+    margin-top: 10px !important;
+  }
+}

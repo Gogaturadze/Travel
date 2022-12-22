@@ -1,0 +1,135 @@
+@media (min-width: 951px) {
+  .burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .conteiner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  h3 {
+    font-size: 40px !important;
+    padding: 2px 0 0 20px !important;
+    letter-spacing: 4px !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .d-none {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .overlap {
+    max-width: 90%;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .cards .card:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  h3 {
+    font-size: 30px !important;
+    padding: 0 0 0 20px !important;
+    letter-spacing: 4px !important;
+  }
+}
+@media screen and (max-width: 680px) {
+  .mimartuleba {
+    flex-wrap: wrap;
+    height: 100% !important;
+  }
+}
+@media screen and (max-width: 680px) {
+  .roundtrip {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 606px) {
+  .freebie {
+    padding: 15px 20px 10px 10px !important;
+  }
+  h3 {
+    font-size: 22px !important;
+    padding: 0 0 0 20px !important;
+    letter-spacing: 2px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .conteiner {
+    width: 95%;
+  }
+  .mimartuleba {
+    height: 130% !important;
+  }
+  .maintext > h1 {
+    font-size: 45px !important;
+  }
+  .roundtrip {
+    margin: -5px 38px 20px 40px;
+  }
+  .marginmedia {
+    margin-right: 17px;
+  }
+  .textcard {
+    margin-top: 150px;
+  }
+  .mtopmedia {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .horvardai {
+    margin-top: 15px !important;
+  }
+}
+@media screen and (max-width: 470px) {
+  .textcard > p3 {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .freebie {
+    padding: 15px 20px 10px 10px !important;
+  }
+  h3 {
+    font-size: 17px !important;
+    padding: 0 0 0 11px !important;
+    letter-spacing: 2px !important;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .textcard {
+    margin-top: 250px;
+  }
+  .roundtrip {
+    margin: 10px 54px 0px 55px;
+  }
+  .mimartuleba {
+    height: 200% !important;
+  }
+  .mbotomedia {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .maintext > h1 {
+    font-size: 20px !important;
+  }
+  .maintext > h3 {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .horvardai {
+    margin-top: 10px !important;
+  }
+}
