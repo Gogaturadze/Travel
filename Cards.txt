@@ -1,0 +1,57 @@
+      <div class="cards conteiner">
+        <div class="card">
+          <div class="heart">
+            <img src="./img/heart.png" alt="" />
+          </div>
+          <img src="./img/card1.png" alt="card1" />
+        </div>
+        <div class="card">
+          <div class="heart">
+            <img src="./img/heart.png" alt="" />
+          </div>
+          <img src="./img/card2.png" alt="card2" />
+        </div>
+        <div class="card">
+          <div class="heart">
+            <img src="./img/heart.png" alt="" />
+          </div>
+          <img src="./img/card3.png" alt="card3" />
+        </div>
+        <div class="card">
+          <div class="heart">
+            <img src="./img/heart.png" alt="" />
+          </div>
+          <img src="./img/card4.png" alt="card4" />
+        </div>
+      </div>
+
+
+
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .card {
+    position: relative;
+    transition: 0.3s;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .card:not(:last-child) {
+    margin-right: 10px;
+  }
+  .heart {
+    position: absolute;
+    right: 0;
+    margin: 4px 4px 0 0;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 8px 20px #958181;
+  }
+}
